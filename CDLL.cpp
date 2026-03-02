@@ -84,7 +84,7 @@ void deletion(Metadata_* &head, int pos){
             free(del);
             head->count--;}
         else
-            cout << "OUT OF BOUND!!" << endl;
+            cout << "WRONG" << endl;
     }
 }
 
@@ -106,6 +106,7 @@ void display(Metadata_* head){
 int main(){
     int choice, position, target;
     char cont = 'y';
+    cout<<"Added print line";
     Metadata_* info = new Metadata_();
     while (cont=='y'){
         cout << "MENU\n1. INSERTION\n2. DELETION\n3. SEARCH\n4. DISPLAY\nEnter your choice: ";
